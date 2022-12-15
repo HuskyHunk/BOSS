@@ -1,68 +1,43 @@
-# JioTVServer
+# JIO TV PHP SERVER
 
-Grab streaming links of JioTV channels and play on mobile, PC etc..
+#### Just Install The Php Script.. Its Easy With Zero Configuration
 
-NOTE: It only works in Indian VPS due to geoblocking
+## **This Works Only On Indian Server And Localhost**
+> 
+If You Don't Know JioID and Pass then Simply click on autologin button
 
-## Features
-- Free of cost :)
-- Easy to set-up and use
-- High Quality Streaming
-- Fast 🔥
+### **How To Use :**
+#### For Help Join Telegram Group [t.me/jiotvphp](http://t.me/jiotvphp)
+####  For Phone-
 
-## Installation
+1. Install the Termux App from F-Droid [LINK](https://f-droid.org/repo/com.termux_117.apk "LINK")
+2. Run the Command-
 
-### Android/Termux
-<details>
-  <summary>Click to expand!</summary>
+        pkg install wget -y
+        wget https://raw.githubusercontent.com/soal001/jiotv/master/android.sh
+        sh android.sh
 
-```bash
-# Upgrade system packages
-pkg update && pkg upgrade
+3. Open Browser and go to the address displayed on termux. Eg. 192.168.0.10:8080
+4. If your phone is connected to jio network click on Try AutoLogin Button or else use your jio email-id and password to login
+5. Check your IP and port or your domain and click on generate playlist.
+6. To start termux on autoboot install Termux:Boot [LINK](https://f-droid.org/repo/com.termux.boot_7.apk "LINK")
+7. Enable Autostart for both Termux and Termux:Boot app from phone settings(Search app autostart or Auto-launch )
+8. To update Run the command -
 
-# Get 'git' and 'PHP'
-pkg install git php
+        sh update.sh
 
-# Download script
-git clone https://github.com/Varun114-Techno/jiotv-server
+####  For Windows PC-
+1.  Install XAMPP
+2. Download this [Repo](https://github.com/soal001/jiotv/archive/refs/heads/main.zip "Repo") and extract it to c://xampp/htdocs folder
+3. Open Browser and go enter ip address. To get IP Address open task manager > performance> WiFi or Ethernet- Check the ip .Eg. 192.168.0.10
+4. If your PC is connected to jio network click on Try AutoLogin Button or else use your jio email-id and password to login
+6. Check your IP and port or your domain and click on generate playlist.
 
-# Run the script
-php -S localhost:8585 -t "$HOME/jiotv-server"
-```
-</details>
+####  For Linux -
+##### Run The Following Commands
 
-## Usage
-
-- [For first time users] Generate credentials using your Jio phone number and password.
-
-  <details>
-  Open your web browser and put the URL as follows
-  
-  ```
-  Format: http://localhost:8585/login.php?user=<ph.no without +91>&pass=<password>
-  Example: http://localhost:8585/login.php?user=6560263759&pass=JioTVRocks
-  ```
-  </details>
-
-- For Web Play, the URL is: `http://localhost:8585`
-- For IPTV Players (OTT Navigator or TiviMate), the playlist URL is: `http://localhost:8585/playlist.php`
-
-
-## Credits
-
-Huge thanks to the following people/projects that helped make this script what it is.
-
-- techiesneh (base PHP script)
-- avipatilpro (base PHP script)
-- AvinashReddy3108 (base PHP script)
-- botallen (for Kodi plugin)
-- jeelpatel231 (helping with web play UI)
-- elvistony (for Python version of JioTVServer)
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-## License
-
-[The Unlicense](https://choosealicense.com/licenses/unlicense/)
+    wget https://raw.githubusercontent.com/soal001/jiotv/master/jiotv.sh
+    sudo sh jiotv.sh
+1. Open Browser and go to the address displayed on teminal. Eg. 192.168.0.10:8080
+2. If your pc/raspberry pi is connected to jio network click on Try AutoLogin Button or else use your jio email-id and password to login
+3. Check your IP and port or your domain and click on generate playlist.
